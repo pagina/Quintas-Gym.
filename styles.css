@@ -1247,14 +1247,26 @@ ul, ol {
   border: 1px solid var(--border-color);
   padding: 36px 28px;
   position: relative;
-  overflow: hidden;
-  transition: all var(--transition-normal);
+  overflow: visible; /* changed from hidden to allow box-shadow to spread smoothly */
+  transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.2), background 0.3s ease, box-shadow 0.4s ease, border-color 0.3s ease;
   display: flex;
   flex-direction: column;
+  z-index: 1;
 }
 
 .descuento-card:hover {
   background: var(--bg-card-hover);
+  transform: translateY(-12px);
+  border-color: rgba(242, 101, 34, 0.3);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.8), 0 0 30px rgba(242, 101, 34, 0.15);
+  z-index: 10;
+}
+
+.descuento-card:hover .btn-primary {
+  background: var(--accent-light);
+  border-color: var(--accent-light);
+  box-shadow: 0 8px 25px rgba(242, 101, 34, 0.4);
+  transform: translateY(-2px);
 }
 
 .descuento-card-featured {
