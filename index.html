@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="QUINTAS GYM - Tu gimnasio en Córdoba, Argentina. Máquinas modernas, profesores presentes, planes personalizados y el mejor ambiente para entrenar.">
+  <meta name="keywords" content="gimnasio, gym, Córdoba, musculación, fitness, clases, quintas gym">
+  <meta name="author" content="Quintas GYM">
+  <meta property="og:title" content="QUINTAS GYM - Tu Lugar para Entrenar">
+  <meta property="og:description"
+    content="Máquinas modernas, profesores presentes en todo momento y el mejor ambiente para entrenar en Córdoba.">
+  <meta property="og:image" content="images/gym-exterior.png">
+  <meta property="og:type" content="website">
+  <title>QUINTAS GYM | Tu Lugar para Entrenar</title>
+  <link rel="icon" type="image/png" href="images/logo.png">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Oswald:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- ============ NAVBAR ============ -->
+  <nav class="navbar" id="navbar">
+    <div class="navbar-container">
+      <div class="navbar-logo">
+        <a href="#inicio" class="logo-text">
+          <span class="logo-quintas">QUINTAS</span><span class="logo-gym">GYM</span>
+        </a>
+      </div>
+      <div class="nav-links" id="navLinks">
+        <a href="#inicio" class="active">Inicio</a>
+        <a href="#info">Info</a>
+        <a href="#instalaciones">Instalaciones</a>
+        <a href="#horarios">Horarios</a>
+        <a href="#descuentos">Promos</a>
+        <a href="#ubicacion">Ubicación</a>
+      </div>
+      <div class="nav-cta">
+        <a href="https://wa.me/5493516433054?text=Hola%20muy%20buenas%2C%20le%20quer%C3%ADa%20consultar%20precio%20del%20gimnasio%20y%20horarios%20que%20se%20hacen%20porfa."
+          class="btn-nav-wa" target="_blank" rel="noopener">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+            <path
+              d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+          </svg>
+          WhatsApp
+        </a>
+      </div>
+      <button class="hamburger" id="hamburger" aria-label="Menú">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#inicio">Inicio</a>
+    <a href="#info">Información</a>
+    <a href="#instalaciones">Instalaciones</a>
+    <a href="#horarios">Horarios</a>
+    <a href="#descuentos">Promos</a>
+    <a href="#ubicacion">Ubicación</a>
+    <a href="https://wa.me/5493516433054?text=Hola%20muy%20buenas%2C%20le%20quer%C3%ADa%20consultar%20precio%20del%20gimnasio%20y%20horarios%20que%20se%20hacen%20porfa."
+      class="mobile-wa-btn" target="_blank" rel="noopener">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+        <path
+          d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+      </svg>
+      Consultá por WhatsApp
+    </a>
+  </div>
+
+  <!-- ============ HERO ============ -->
+  <section class="hero" id="inicio">
+    <div class="hero-bg">
+      <img src="images/gym-exterior.png" alt="Quintas GYM Fachada">
+    </div>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <div class="hero-text">
+        <div class="hero-badge">
+          <span class="badge-dot"></span>
+          Córdoba, Argentina
+        </div>
+        <h1 class="hero-title">
+          QUINTAS<br>
+          <span class="hero-title-accent">GYM</span>
+        </h1>
+        <p class="hero-subtitle">Tu lugar para transformar tu cuerpo y superar tus límites. Equipamiento de primera,
+          profesores dedicados y la mejor energía.</p>
+        <div class="hero-cta">
+          <a href="https://wa.me/5493516433054?text=Hola%20muy%20buenas%2C%20le%20quer%C3%ADa%20consultar%20precio%20del%20gimnasio%20y%20horarios%20que%20se%20hacen%20porfa."
+            class="btn btn-primary" target="_blank" rel="noopener">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+            </svg>
+            Consultá por WhatsApp
+          </a>
+          <a href="#info" class="btn btn-ghost">Conocé más ↓</a>
+        </div>
+      </div>
+      <div class="hero-stats">
+        <div class="hero-stat">
+          <span class="stat-number" data-target="1240">0</span>
+          <span class="stat-label">Alumnos activos</span>
+        </div>
+        <div class="hero-stat">
+          <span class="stat-number">+9</span>
+          <span class="stat-label">Años de experiencia</span>
+        </div>
+        <div class="hero-stat">
+          <span class="stat-number">100%</span>
+          <span class="stat-label">Compromiso</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ INFO + MOTIVACIONAL CBUM ============ -->
+  <section class="section" id="info">
+    <div class="container">
+      <div class="section-header animate-on-scroll">
+        <div class="section-header-content">
+          <span class="section-tag">Sobre nosotros</span>
+          <h2 class="section-title">¿Por qué<br>elegirnos?</h2>
+        </div>
+        <p class="section-subtitle">Diseñamos una experiencia de entrenamiento integral donde la tecnología y el factor
+          humano se unen para potenciar tus límites.</p>
+      </div>
+
+      <div class="info-cbum-layout animate-on-scroll">
+        <!-- Info Cards -->
+        <div class="info-grid-side">
+          <div class="info-card">
+            <div class="info-card-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M6.5 6.5h11v11h-11z" />
+                <path d="M2 12h4.5M17.5 12H22M12 2v4.5M12 17.5V22" />
+              </svg>
+            </div>
+            <h3>Máquinas Modernas</h3>
+            <p>Equipamiento biomecánico de primera línea diseñado para optimizar cada repetición y minimizar riesgos.</p>
+          </div>
+          <div class="info-card">
+            <div class="info-card-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+                <circle cx="9" cy="7" r="4" />
+                <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
+                <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+              </svg>
+            </div>
+            <h3>Profesores Presentes</h3>
+            <p>Guía constante en sala para asegurar la técnica correcta y motivarte a superar tus marcas personales.</p>
+          </div>
+          <div class="info-card">
+            <div class="info-card-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
+                <polyline points="14 2 14 8 20 8" />
+                <line x1="16" y1="13" x2="8" y2="13" />
+                <line x1="16" y1="17" x2="8" y2="17" />
+              </svg>
+            </div>
+            <h3>Planes Personalizados</h3>
+            <p>Rutinas adaptadas a tus objetivos específicos, ya sea hipertrofia, pérdida de peso o rendimiento atlético.</p>
+          </div>
+          <div class="info-card">
+            <div class="info-card-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" />
+              </svg>
+            </div>
+            <h3>Excelente Predisposición</h3>
+            <p>Un ambiente enérgico y profesional donde te sentirás cómodo desde el primer día que entres al gym.</p>
+          </div>
+          <div class="info-card">
+            <div class="info-card-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+              </svg>
+            </div>
+            <h3>Ambiente Cómodo</h3>
+            <p>Instalaciones climatizadas y diseñadas para que el foco esté siempre en tu progreso.</p>
+          </div>
+          <div class="info-card">
+            <div class="info-card-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+              </svg>
+            </div>
+            <h3>Compromiso Total</h3>
+            <p>Nos involucramos en tu proceso brindándote las herramientas necesarias para el éxito.</p>
+          </div>
+        </div>
+
+        <!-- CBum Image -->
+        <div class="cbum-side">
+          <div class="cbum-image">
+            <img src="images/cbum.png" alt="Chris Bumstead - Motivación">
+            <div class="cbum-image-glow"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Motivational Quote Below -->
+      <div class="motivational-banner animate-on-scroll">
+        <blockquote class="motivational-banner-quote">
+          "El dolor que sentís hoy será la fuerza que tendrás mañana."
+        </blockquote>
+        <div class="motivational-banner-meta">
+          <div class="motivational-divider"></div>
+          <p class="motivational-author">Filosofía Quintas GYM</p>
+        </div>
+      </div>
+
+      <div class="info-climate animate-on-scroll">
+        <div class="climate-icon">
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41" />
+            <circle cx="12" cy="12" r="4" />
+          </svg>
+        </div>
+        <div class="climate-text">
+          <p>El gimnasio cuenta con <strong>4 aires acondicionados</strong> y <strong>9 ventiladores</strong> para que en
+            épocas de calor puedas entrenar de la forma más cómoda posible.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ INSTALACIONES ============ -->
+  <section class="section" id="instalaciones">
+    <div class="container">
+      <div class="section-header section-header-center animate-on-scroll">
+        <span class="section-tag">Nuestro espacio</span>
+        <h2 class="section-title">Conocé nuestras instalaciones</h2>
+        <p class="section-subtitle">Ambientes diseñados para el máximo rendimiento. Equipamiento de élite en cada
+          rincón.</p>
+      </div>
+
+      <div class="gallery-grid animate-on-scroll">
+        <div class="gallery-item" data-img="images/gym-exterior.png">
+          <img src="images/gym-exterior.png" alt="Fachada Quintas GYM" loading="lazy">
+          <div class="gallery-item-overlay">
+            <div class="gallery-item-info">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
+                <circle cx="11" cy="11" r="8" />
+                <line x1="21" y1="21" x2="16.65" y2="16.65" />
+              </svg>
+              <span>Fachada</span>
+            </div>
+          </div>
+        </div>
+        <div class="gallery-item" data-img="images/gym-machines.png">
+          <img src="images/gym-machines.png" alt="Máquinas del gimnasio" loading="lazy">
+          <div class="gallery-item-overlay">
+            <div class="gallery-item-info">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
+                <circle cx="11" cy="11" r="8" />
+                <line x1="21" y1="21" x2="16.65" y2="16.65" />
+              </svg>
+              <span>Máquinas</span>
+            </div>
+          </div>
+        </div>
+        <div class="gallery-item" data-img="images/dumbbells.jpg">
+          <img src="images/dumbbells.jpg" alt="Mancuernas" loading="lazy">
+          <div class="gallery-item-overlay">
+            <div class="gallery-item-info">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
+                <circle cx="11" cy="11" r="8" />
+                <line x1="21" y1="21" x2="16.65" y2="16.65" />
+              </svg>
+              <span>Mancuernas</span>
+            </div>
+          </div>
+        </div>
+        <div class="gallery-item" data-img="images/gym-wide.jpg">
+          <img src="images/gym-wide.jpg" alt="Vista general del gimnasio" loading="lazy">
+          <div class="gallery-item-overlay">
+            <div class="gallery-item-info">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
+                <circle cx="11" cy="11" r="8" />
+                <line x1="21" y1="21" x2="16.65" y2="16.65" />
+              </svg>
+              <span>Sala Principal</span>
+            </div>
+          </div>
+        </div>
+        <div class="gallery-item" data-img="images/gym-treadmills.png">
+          <img src="images/gym-treadmills.png" alt="Área de cintas" loading="lazy">
+          <div class="gallery-item-overlay">
+            <div class="gallery-item-info">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
+                <circle cx="11" cy="11" r="8" />
+                <line x1="21" y1="21" x2="16.65" y2="16.65" />
+              </svg>
+              <span>Cardio</span>
+            </div>
+          </div>
+        </div>
+        <div class="gallery-item" data-img="images/gym-legpress.png">
+          <img src="images/gym-legpress.png" alt="Prensa de piernas" loading="lazy">
+          <div class="gallery-item-overlay">
+            <div class="gallery-item-info">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
+                <circle cx="11" cy="11" r="8" />
+                <line x1="21" y1="21" x2="16.65" y2="16.65" />
+              </svg>
+              <span>Prensa</span>
+            </div>
+          </div>
+        </div>
+        <div class="gallery-item" data-img="images/class-area.jpg">
+          <img src="images/class-area.jpg" alt="Área de clases" loading="lazy">
+          <div class="gallery-item-overlay">
+            <div class="gallery-item-info">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
+                <circle cx="11" cy="11" r="8" />
+                <line x1="21" y1="21" x2="16.65" y2="16.65" />
+              </svg>
+              <span>Clases</span>
+            </div>
+          </div>
+        </div>
+        <div class="gallery-item" data-img="images/spinning.jpg">
+          <img src="images/spinning.jpg" alt="Zona de spinning" loading="lazy">
+          <div class="gallery-item-overlay">
+            <div class="gallery-item-info">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
+                <circle cx="11" cy="11" r="8" />
+                <line x1="21" y1="21" x2="16.65" y2="16.65" />
+              </svg>
+              <span>Spinning</span>
+            </div>
+          </div>
+        </div>
+        <div class="gallery-item" data-img="images/gym-interior-2.png">
+          <img src="images/gym-interior-2.png" alt="Interior amplio del gimnasio" loading="lazy">
+          <div class="gallery-item-overlay">
+            <div class="gallery-item-info">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
+                <circle cx="11" cy="11" r="8" />
+                <line x1="21" y1="21" x2="16.65" y2="16.65" />
+              </svg>
+              <span>Interior</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ HORARIOS ============ -->
+  <section class="section section-dark" id="horarios">
+    <div class="container">
+      <div class="section-header section-header-center animate-on-scroll">
+        <span class="section-tag">Planificá tu semana</span>
+        <h2 class="section-title">Horarios de entrenamiento</h2>
+        <p class="section-subtitle">Organizá tu semana y vení a entrenar en el horario que más te convenga.</p>
+      </div>
+
+      <div class="horarios-container animate-on-scroll">
+        <!-- Musculación -->
+        <div class="horario-card">
+          <div class="horario-card-header">
+            <div class="horario-icon-wrapper">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M6.5 6.5h11v11h-11z" />
+                <path d="M2 12h4.5M17.5 12H22M12 2v4.5M12 17.5V22" />
+              </svg>
+            </div>
+            <div>
+              <h3>Musculación</h3>
+              <p>Sala de pesas y máquinas</p>
+            </div>
+          </div>
+          <div class="horario-list">
+            <div class="horario-item">
+              <span class="horario-day">Lunes a Viernes</span>
+              <span class="horario-time">7:00 — 22:00</span>
+            </div>
+            <div class="horario-item">
+              <span class="horario-day">Sábados</span>
+              <span class="horario-time">8:00 — 13:00</span>
+            </div>
+          </div>
+          <div class="horario-badge">Abierto ahora</div>
+        </div>
+
+        <!-- Clases Funcionales -->
+        <div class="horario-card">
+          <div class="horario-card-header">
+            <div class="horario-icon-wrapper horario-icon-fire">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 22c-4.97 0-9-2.69-9-6 0-3.28 2.13-4.44 3.56-6.44C8.03 7.56 8 5 12 2c0 4 4.5 5 6.24 7.86C19.94 12.46 21 13.85 21 16c0 3.31-4.03 6-9 6z" />
+              </svg>
+            </div>
+            <div>
+              <h3>Clases Funcionales</h3>
+              <p>Funcional, spinning y más</p>
+            </div>
+          </div>
+          <div class="horario-list">
+            <div class="horario-item">
+              <span class="horario-day">Lunes, Miércoles y Viernes</span>
+              <span class="horario-time">8:00 — 9:00</span>
+            </div>
+            <div class="horario-item">
+              <span class="horario-day">Martes y Jueves</span>
+              <span class="horario-time">18:00 — 19:00</span>
+            </div>
+          </div>
+          <div class="horario-badge horario-badge-fire">Cupos limitados</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ DESCUENTOS ============ -->
+  <section class="section" id="descuentos">
+    <div class="container">
+      <div class="section-header section-header-center animate-on-scroll">
+        <span class="section-tag">Ofertas exclusivas</span>
+        <h2 class="section-title">Promociones activas</h2>
+        <p class="section-subtitle">Aprovechá nuestras ofertas de temporada para maximizar tu rendimiento al mejor
+          costo.</p>
+      </div>
+
+      <div class="descuentos-grid animate-on-scroll">
+        <div class="descuento-card">
+          <div class="descuento-ribbon">Popular</div>
+          <div class="descuento-header">
+            <h3>Pase Mensual</h3>
+          </div>
+          <p class="descuento-desc">Acceso total a sala de musculación y clases grupales sin límite de horario.</p>
+          <ul class="descuento-features">
+            <li>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+                <polyline points="20 6 9 17 4 12"></polyline>
+              </svg>
+              Musculación ilimitada
+            </li>
+            <li>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+                <polyline points="20 6 9 17 4 12"></polyline>
+              </svg>
+              Seguimiento del profesor
+            </li>
+          </ul>
+          <a href="https://wa.me/5493516433054?text=Hola%20muy%20buenas%2C%20le%20quer%C3%ADa%20consultar%20precio%20del%20*Pase%20Mensual*%20y%20horarios%20que%20se%20hacen%20porfa."
+            class="btn btn-primary btn-full" target="_blank" rel="noopener">Consultar Precio</a>
+        </div>
+
+        <div class="descuento-card descuento-card-featured">
+          <div class="descuento-ribbon descuento-ribbon-featured">Mejor Valor</div>
+          <div class="descuento-header">
+            <h3>Pase Trimestral</h3>
+          </div>
+          <p class="descuento-desc">La mejor opción para quienes buscan resultados reales y sostenibles en el tiempo.
+          </p>
+          <ul class="descuento-features">
+            <li>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+                <polyline points="20 6 9 17 4 12"></polyline>
+              </svg>
+              Todo lo del Pase Mensual
+            </li>
+            <li>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+                <polyline points="20 6 9 17 4 12"></polyline>
+              </svg>
+              Descuento exclusivo
+            </li>
+            <li>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+                <polyline points="20 6 9 17 4 12"></polyline>
+              </svg>
+              Rutina personalizada
+            </li>
+          </ul>
+          <a href="https://wa.me/5493516433054?text=Hola%20muy%20buenas%2C%20le%20quer%C3%ADa%20consultar%20precio%20del%20*Pase%20Trimestral*%20y%20horarios%20que%20se%20hacen%20porfa."
+            class="btn btn-primary btn-full" target="_blank" rel="noopener">Consultar Precio</a>
+        </div>
+
+        <div class="descuento-card">
+          <div class="descuento-ribbon">Comunidad</div>
+          <div class="descuento-header">
+            <h3>Plan Dúo</h3>
+          </div>
+          <p class="descuento-desc">Entrenar acompañado potencia los resultados. Descuento especial para parejas o
+            amigos.</p>
+          <ul class="descuento-features">
+            <li>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+                <polyline points="20 6 9 17 4 12"></polyline>
+              </svg>
+              2 pases con descuento
+            </li>
+            <li>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+                <polyline points="20 6 9 17 4 12"></polyline>
+              </svg>
+              Entrenar juntos motiva
+            </li>
+            <li>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+                <polyline points="20 6 9 17 4 12"></polyline>
+              </svg>
+              Todos los beneficios incluidos
+            </li>
+          </ul>
+          <a href="https://wa.me/5493516433054?text=Hola%20muy%20buenas%2C%20le%20quer%C3%ADa%20consultar%20precio%20del%20*Plan%20D%C3%BAo*%20y%20horarios%20que%20se%20hacen%20porfa."
+            class="btn btn-primary btn-full" target="_blank" rel="noopener">Consultar Precio</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ MOTIVACIONAL ARNOLD ============ -->
+  <section class="motivational motivational-arnold" id="motivacional-2">
+    <div class="motivational-bg">
+      <img src="images/arnold.png" alt="Arnold Schwarzenegger">
+    </div>
+    <div class="motivational-bg-overlay"></div>
+    <div class="motivational-fullwidth-content">
+      <blockquote class="motivational-big-quote animate-on-scroll">
+        "El mejor momento para empezar fue ayer. El segundo mejor momento es <span>ahora.</span>"
+      </blockquote>
+      <p class="motivational-big-author animate-on-scroll">— Arnold Schwarzenegger</p>
+      <a href="https://wa.me/5493516433054?text=Hola%20muy%20buenas%2C%20le%20quer%C3%ADa%20consultar%20precio%20del%20gimnasio%20y%20horarios%20que%20se%20hacen%20porfa."
+        class="btn btn-primary animate-on-scroll" target="_blank" rel="noopener" style="margin-top: 32px;">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+          <path
+            d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+        </svg>
+        ¡Empezá hoy!
+      </a>
+    </div>
+  </section>
+
+  <!-- ============ UBICACIÓN ============ -->
+  <section class="section" id="ubicacion">
+    <div class="container">
+      <div class="section-header section-header-center animate-on-scroll">
+        <span class="section-tag">Encontranos</span>
+        <h2 class="section-title">Nuestra ubicación</h2>
+        <p class="section-subtitle">Avenida Gral. O'Higgins 5671, Córdoba, Argentina. ¡Tu lugar de entrenamiento te
+          espera!</p>
+      </div>
+
+      <div class="map-wrapper animate-on-scroll">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3402.55!2d-64.173!3d-31.475!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9432a24987f18579%3A0x7d3536f97ef786c!2sAv.%20Gral.%20O'Higgins%205671%2C%20X5014%20C%C3%B3rdoba!5e0!3m2!1ses!2sar!4v1711915000000!5m2!1ses!2sar"
+          width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+        <div class="map-action">
+          <a href="https://www.google.com/maps/search/Quintas+GYM+Córdoba+Argentina" class="btn btn-primary"
+            target="_blank" rel="noopener">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z" />
+              <circle cx="12" cy="10" r="3" />
+            </svg>
+            Abrir en Google Maps
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="#inicio" class="logo-text footer-logo-text">
+            <span class="logo-quintas">QUINTAS</span><span class="logo-gym">GYM</span>
+          </a>
+          <p>Tu lugar para entrenar en Córdoba. Máquinas modernas, profesores presentes y la mejor energía.</p>
+        </div>
+        <div class="footer-nav">
+          <h4>Navegación</h4>
+          <a href="#inicio">Inicio</a>
+          <a href="#info">Información</a>
+          <a href="#instalaciones">Instalaciones</a>
+          <a href="#horarios">Horarios</a>
+          <a href="#descuentos">Promos</a>
+          <a href="#ubicacion">Ubicación</a>
+        </div>
+        <div class="footer-social">
+          <h4>Seguinos</h4>
+          <a href="https://www.instagram.com/gymquintas/" target="_blank" rel="noopener" class="footer-ig-link">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+              <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+              <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+            </svg>
+            @gymquintas
+          </a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 QUINTAS GYM. Todos los derechos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ============ WHATSAPP FLOTANTE ============ -->
+  <a href="https://wa.me/5493516433054?text=Hola%20muy%20buenas%2C%20le%20quer%C3%ADa%20consultar%20precio%20del%20gimnasio%20y%20horarios%20que%20se%20hacen%20porfa."
+    class="whatsapp-float" target="_blank" rel="noopener" aria-label="WhatsApp" id="whatsappFloat">
+    <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor">
+      <path
+        d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+    </svg>
+    <span class="wa-tooltip">¡Escribinos!</span>
+  </a>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox">
+    <button class="lightbox-close" id="lightboxClose">&times;</button>
+    <button class="lightbox-nav lightbox-prev" id="lightboxPrev">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
+        <polyline points="15 18 9 12 15 6"></polyline>
+      </svg>
+    </button>
+    <img src="" alt="Imagen ampliada" id="lightboxImg">
+    <button class="lightbox-nav lightbox-next" id="lightboxNext">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
+        <polyline points="9 18 15 12 9 6"></polyline>
+      </svg>
+    </button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
