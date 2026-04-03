@@ -642,6 +642,41 @@
   </div>
 
   <script src="script.js"></script>
-</body>
 
+<h2>Registrate</h2>
+
+<input type="text" id="nombre" placeholder="Nombre">
+<input type="text" id="telefono" placeholder="Teléfono">
+<input type="email" id="email" placeholder="Email">
+
+<button onclick="registrarCliente()">Registrarme</button>
+
+<!-- 🔥 SUPABASE -->
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
+
+<script>
+const supabase = supabase.createClient(
+  'TU_URL',
+  'TU_API_KEY'
+);
+
+async function registrarCliente() {
+  const nombre = document.getElementById('nombre').value;
+  const telefono = document.getElementById('telefono').value;
+  const email = document.getElementById('email').value;
+
+  const { data, error } = await supabase
+    .from('clientes')
+    .insert([{ nombre, telefono, email }]);
+
+  if (error) {
+    alert("Error al registrar");
+    console.log(error);
+  } else {
+    alert("Registrado correctamente 💪");
+  }
+}
+</script>
+
+</body>
 </html>
